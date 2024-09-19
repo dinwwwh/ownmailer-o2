@@ -43,6 +43,10 @@
     "build:watch": "vite build --watch",
     "type:check": "tsc -b"
   },
+  "dependencies": {
+    "valibot": "^0.42.0",
+    "@orpc/contract": "workspace:*"
+  },
   "devDependencies": {
     "@dinwwwh/tsconfig": "latest",
     "@types/node": "latest",
