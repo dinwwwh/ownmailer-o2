@@ -6,6 +6,7 @@ export const listIdentityRoute = orpc
   .route({
     method: 'GET',
     path: '/',
+    summary: 'List mailer identities',
   })
   .response({
     status: 200,

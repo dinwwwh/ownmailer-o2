@@ -6,6 +6,7 @@ export const emailSendRoute = orpc
   .route({
     method: 'POST',
     path: '/',
+    summary: 'Send an email',
   })
   .body(EmailSendBodyInputSchema)
   .response({
@@ -17,6 +18,7 @@ export const emailSendBatchRoute = orpc
   .route({
     method: 'POST',
     path: '/batch',
+    summary: 'Batch send emails',
   })
   .body(array(EmailSendBodyInputSchema))
   .response({
@@ -28,6 +30,7 @@ export const emailListRoute = orpc
   .route({
     method: 'GET',
     path: '/',
+    summary: 'List emails',
   })
   .query(EmailListQueryInputSchema)
   .response({
